@@ -138,6 +138,7 @@
   border-radius: 50px;
   font-weight: bold;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .contact form button span {
