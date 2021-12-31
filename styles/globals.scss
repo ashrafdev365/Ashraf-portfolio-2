@@ -1,60 +1,55 @@
+@import "./utils/varialbles/fonts";
+@import "./utils//mixins/button";
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: none;
   font-family: "Poppins", sans-serif;
 }
-
 body {
   overflow-x: hidden;
   background: #111111;
 }
-
 a {
   color: black;
   text-decoration: none;
 }
-
 p,
 button {
-  font-size: 16px;
+  font-size: $pera-lg;
 }
-
 h1 {
-  font-size: 55px;
+  font-size: $heading-xl;
   font-family: "Fredoka One", cursive;
+  span {
+    font-family: "Fredoka One", cursive;
+    color: #4e4aff;
+  }
 }
 
-h1 span {
-  font-family: "Fredoka One", cursive;
-  color: #4e4aff;
-}
+
 
 @media screen and (max-width: 1050px) {
   p,
   button {
-    font-size: 14px;
+    font-size: $pera-md;
   }
   h1 {
-    font-size: 38px;
+    font-size: $heading-lg;
   }
 }
-
 @media screen and (max-width: 750px) {
   h1 {
-    font-size: 32px;
+    font-size: $heading-md;
   }
 }
-
 @media screen and (max-width: 500px) {
   p,
   button {
-    font-size: 12px;
+    font-size: $pera-sm;
   }
   h1 {
-    font-size: 26px;
+    font-size: $heading-sm;
   }
 }
-/*# sourceMappingURL=globals.css.map */

@@ -1,0 +1,107 @@
+@import "../../utils/varialbles/fonts";
+@import "../../utils/varialbles/width";
+@import "../../utils/varialbles/colors";
+@import "../../utils/mixins/button";
+@import "../../utils/mixins/flex";
+@import "../../utils/varialbles/border";
+
+.heading {
+  text-align: center;
+  color: $white;
+  margin: 120px 0px 100px;
+}
+
+.contact {
+  width: $width-lg;
+  margin: 0px auto;
+  @include flex($content: space-between);
+  //   border: 1px solid rgba(255, 255, 255, 0.247);
+  section {
+    color: $white;
+    h2 {
+      text-transform: uppercase;
+    }
+    p {
+      width: 310px;
+      word-break: break-all;
+      margin: 20px 0px 30px;
+    }
+    div {
+      @include flex;
+      cursor: pointer;
+      margin-bottom: 50px;
+      i {
+        font-size: 2.2rem;
+        color: $blue;
+        margin-right: 10px;
+      }
+      span {
+        h3 {
+          text-transform: uppercase;
+          margin-bottom: -10px;
+        }
+        p {
+          margin: 0px;
+        }
+      }
+    }
+
+    span {
+      a {
+        color: $white;
+        margin: 0px 28px 0px 0px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  form {
+    @include flex($direc: column, $items: flex-start);
+
+    input {
+      font-size: 18px;
+      padding: 9px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.247);
+      background-color: transparent;
+      border-radius: $circle;
+      width: 300px;
+      margin-right: 20px;
+      color: $white;
+    }
+    .subject {
+      margin: 20px 0;
+      width: 97%;
+    }
+    textarea {
+      font-size: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.247);
+      background-color: transparent;
+      padding: 12px;
+      border-radius: 10px;
+      margin-left: 5px;
+      width: 96%;
+      height: 200px;
+      color: $white;
+    }
+
+    button {
+      border: 2px solid $blue;
+      background-color: transparent;
+      color: $white;
+      display: flex;
+      align-items: center;
+      border-radius: $circle;
+      font-weight: bold;
+      margin-top: 50px;
+      span {
+        margin: 0 30px;
+      }
+      i {
+        font-size: 1.4rem;
+        padding: 10px 10px;
+        border-radius: $circle;
+        background-color: $blue;
+      }
+    }
+  }
+}

@@ -1,14 +1,10 @@
-import '../styles/globals.css';
-import '../styles/pages/home/home.css';
-import '../styles/pages/about/about.css';
-import '../styles/pages/projects/projects.css';
-import '../styles/pages/contact/contact.css';
-import Head from 'next/head'
+import Document, { Head, Html, NextScript, Main } from "next/document";
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      {/* <Head>
+export default class CustomDocument extends Document {
+  render() {
+    return (
+      <Html>
+        <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -27,10 +23,13 @@ function MyApp({ Component, pageProps }) {
             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
             crossorigin="anonymous"
           />
-        </Head> */}
-      <Component {...pageProps} />
-    </>
-  )
-}
+        </Head>
 
-export default MyApp
+        <body>
+          <Main />
+        </body>
+        <NextScript />
+      </Html>
+    );
+  }
+}

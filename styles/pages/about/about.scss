@@ -1,0 +1,137 @@
+@import "../../utils/varialbles/fonts";
+@import "../../utils/varialbles/width";
+@import "../../utils/varialbles/colors";
+@import "../../utils/mixins/button";
+@import "../../utils/mixins/flex";
+@import "../../utils/varialbles/border";
+
+.aboutHeading {
+  text-align: center;
+  margin: 80px 0px 120px;
+  color: $white;
+}
+
+.info {
+  width: $width-xl;
+  margin: 0px auto;
+  color: $white;
+  @include flex($content: space-between);
+
+  .info_section {
+    position: relative;
+    width: 650px;
+    height: 400px;
+    // border: 1px solid red;
+    h2 {
+      text-transform: uppercase;
+      font-size: 30px;
+    }
+    div {
+      @include flex($content: flex-start);
+      margin-top: 10px;
+      ul {
+        margin-right: 80px;
+        li {
+          font-size: 20px;
+          list-style: none;
+          margin: 22px 0px;
+          word-spacing: 2px;
+
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .naxt_btn {
+      @include button($bottom: 0px, $pad: 10px 11px);
+      left: 0px;
+    }
+  }
+
+  .experiance {
+    width: 700px;
+    height: 420px;
+    @include flex($content: flex-start, $wrap: wrap);
+    position: relative;
+    .box {
+      width: 300px;
+      height: 190px;
+      border: 1px solid rgba(255, 255, 255, 0.233);
+      margin: 15px;
+      border-radius: $round;
+      position: relative;
+      padding: 5px 30px;
+      h3 {
+        font-size: 68px;
+        position: relative;
+        color: $blue;
+        span {
+          font-size: 50px;
+          position: absolute;
+          top: 5px;
+          left: 70px;
+        }
+      }
+
+      p {
+        font-size: 24px;
+        display: inline;
+        position: relative;
+        margin-left: 60px;
+        span {
+          margin-left: 60px;
+        }
+      }
+      p::after {
+        content: "";
+        width: 50px;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        left: -60px;
+        top: 15px;
+      }
+    }
+    #box1 {
+      h3 {
+        span {
+          left: 45px;
+        }
+      }
+    }
+    .naxt_btn {
+      @include button($bottom: 85px, $right: 100px, $pad: 10px 11px);
+    }
+  }
+}
+
+.skills {
+  text-align: center;
+  font-size: $heading-lg;
+  color: $white;
+  margin: 200px 0px 80px;
+  font-family: "Fredoka One", cursive;
+  span {
+    color: $blue;
+    font-family: "Fredoka One", cursive;
+  }
+}
+.language {
+  width: $width-xl;
+  margin: 0px auto 100px;
+  @include flex($wrap: wrap);
+  div {
+    text-align: center;
+    margin: 70px;
+    img {
+      width: 120px;
+    }
+    p {
+      color: $white;
+      margin-top: 10px;
+      font-family: "Fredoka One", cursive;
+    }
+  }
+}

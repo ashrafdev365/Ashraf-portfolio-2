@@ -1,0 +1,104 @@
+@import "../../utils/varialbles/fonts";
+@import "../../utils/varialbles/width";
+@import "../../utils/varialbles/colors";
+@import "../../utils/mixins/button";
+@import "../../utils/mixins/flex";
+@import "../../utils/varialbles/border";
+
+.work_heading {
+  margin: 100px 0 60px;
+  text-align: center;
+  color: $white;
+}
+
+.project_cetagory {
+  @include flex();
+
+  button {
+    margin: 0px 15px;
+    padding: 6px 25px;
+    border-radius: $circle;
+    background-color: $blue;
+    color: $white;
+    font-family: "Fredoka One", cursive;
+    cursor: pointer;
+  }
+}
+
+.project_section {
+  width: $width-xl;
+  margin: 70px auto;
+  @include flex($wrap: wrap);
+  div {
+    background-color: rgb(49, 49, 49);
+    width: 380px;
+    height: 220px;
+    border-radius: $round;
+    margin: 20px;
+    @include flex($wrap: wrap);
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.project_portal {
+  background-color: rgba(0, 0, 0, 0.575);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  @include flex();
+}
+
+.detaile {
+  width: 700px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(44, 44, 44);
+  color: $white;
+  @include flex($direc: column);
+  position: relative;
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  .fa-times-circle {
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  ul {
+    @include flex($content: space-between);
+    width: 95%;
+    // border: 1px solid red;
+    text-align: start;
+    margin-bottom: 20px;
+    li {
+      list-style: none;
+      margin: 10px 20px;
+      letter-spacing: 1px;
+      span {
+        margin: 0px 5px 0px 10px;
+        font-weight: bold;
+      }
+      i {
+        font-size: 1.4rem;
+        font-weight: lighter;
+      }
+    }
+  }
+
+  div {
+    width: 95%;
+    height: 350px;
+    border-radius: 10px;
+    background-color: rgb(104, 104, 104);
+    @include flex($direc: column);
+    font-size: 40px;
+  }
+}

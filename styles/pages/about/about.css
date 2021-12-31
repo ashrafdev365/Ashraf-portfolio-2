@@ -1,0 +1,248 @@
+.aboutHeading {
+  text-align: center;
+  margin: 80px 0px 120px;
+  color: white;
+}
+
+.info {
+  width: 1450px;
+  margin: 0px auto;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.info .info_section {
+  position: relative;
+  width: 650px;
+  height: 400px;
+}
+
+.info .info_section h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.info .info_section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10px;
+}
+
+.info .info_section div ul {
+  margin-right: 80px;
+}
+
+.info .info_section div ul li {
+  font-size: 20px;
+  list-style: none;
+  margin: 22px 0px;
+  word-spacing: 2px;
+}
+
+.info .info_section div ul li span {
+  font-weight: 600;
+}
+
+.info .info_section .naxt_btn {
+  position: absolute;
+  right: 40px;
+  bottom: 0px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: 2px solid #4e4aff;
+  color: white;
+  cursor: pointer;
+  left: 0px;
+}
+
+.info .info_section .naxt_btn span {
+  margin: 0px 20px;
+}
+
+.info .info_section .naxt_btn i {
+  font-size: 1.5rem;
+  padding: 10px 11px;
+  border-radius: 50px;
+  background-color: #4e4aff;
+  color: white;
+}
+
+.info .experiance {
+  width: 700px;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.info .experiance .box {
+  width: 300px;
+  height: 190px;
+  border: 1px solid rgba(255, 255, 255, 0.233);
+  margin: 15px;
+  border-radius: 4px;
+  position: relative;
+  padding: 5px 30px;
+}
+
+.info .experiance .box h3 {
+  font-size: 68px;
+  position: relative;
+  color: #4e4aff;
+}
+
+.info .experiance .box h3 span {
+  font-size: 50px;
+  position: absolute;
+  top: 5px;
+  left: 70px;
+}
+
+.info .experiance .box p {
+  font-size: 24px;
+  display: inline;
+  position: relative;
+  margin-left: 60px;
+}
+
+.info .experiance .box p span {
+  margin-left: 60px;
+}
+
+.info .experiance .box p::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  left: -60px;
+  top: 15px;
+}
+
+.info .experiance #box1 h3 span {
+  left: 45px;
+}
+
+.info .experiance .naxt_btn {
+  position: absolute;
+  right: 100px;
+  bottom: 85px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: 2px solid #4e4aff;
+  color: white;
+  cursor: pointer;
+}
+
+.info .experiance .naxt_btn span {
+  margin: 0px 20px;
+}
+
+.info .experiance .naxt_btn i {
+  font-size: 1.5rem;
+  padding: 10px 11px;
+  border-radius: 50px;
+  background-color: #4e4aff;
+  color: white;
+}
+
+.skills {
+  text-align: center;
+  font-size: 38px;
+  color: white;
+  margin: 200px 0px 80px;
+  font-family: "Fredoka One", cursive;
+}
+
+.skills span {
+  color: #4e4aff;
+  font-family: "Fredoka One", cursive;
+}
+
+.language {
+  width: 1450px;
+  margin: 0px auto 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.language div {
+  text-align: center;
+  margin: 70px;
+}
+
+.language div img {
+  width: 120px;
+}
+
+.language div p {
+  color: white;
+  margin-top: 10px;
+  font-family: "Fredoka One", cursive;
+}
+/*# sourceMappingURL=about.css.map */
