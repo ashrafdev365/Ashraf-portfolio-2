@@ -5,13 +5,22 @@
 @import "../../utils/mixins/flex";
 
 .home_side_design {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  img {
-    width: 500px;
+  .back_design {
+    width: 350px;
     height: 100vh;
+    background-color: #4e4aff;
     position: absolute;
+    z-index: -1;
+  }
+  .back {
+    width: 180px;
+    height: 105vh;
+    background-color: #111111;
+    position: absolute;
+    top: -50px;
+    left: 250px;
+    transform: rotateZ(-10deg);
+
     z-index: -1;
   }
 }
@@ -108,17 +117,6 @@
 }
 
 @media screen and (max-width: 1450px) {
-  .home_side_design {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    img {
-      width: 500px;
-      height: 100vh;
-      position: absolute;
-      z-index: -1;
-    }
-  }
   .profile_img {
     width: 520px;
     height: 89vh;
@@ -159,19 +157,16 @@
 
 @media screen and (max-width: 1050px) {
   .home_side_design {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    .desktop_image {
-      display: none;
-    }
-    .tablet_image {
-      // display: none;
-      width: 1050px;
-      height: 610px;
+    .back_design {
+      width: 100vw;
+      height: 400px;
+      background-color: #4e4aff;
       position: absolute;
       top: 0px;
-      z-index: -2;
+      z-index: -5;
+    }
+    .back {
+      display: none;
     }
   }
   .profile_img {
@@ -274,19 +269,13 @@
 
 @media screen and (max-width: 750px) {
   .home_side_design {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    .desktop_image {
-      display: none;
-    }
-    .tablet_image {
-      // display: none;
-      width: 750px;
-      height: 440px;
+    .back_design {
+      width: 100vw;
+      height: 300px;
+      background-color: #4e4aff;
       position: absolute;
       top: 0px;
-      z-index: -2;
+      z-index: -5;
     }
   }
   .profile_img {
@@ -399,19 +388,13 @@
 
 @media screen and (max-width: 500px) {
   .home_side_design {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    .desktop_image {
-      display: none;
-    }
-    .tablet_image {
-      // display: none;
-      width: 500px;
-      height: 292px;
+    .back_design {
+      width: 100vw;
+      height: 200px;
+      background-color: #4e4aff;
       position: absolute;
       top: 0px;
-      z-index: -2;
+      z-index: -5;
     }
   }
   .profile_img {

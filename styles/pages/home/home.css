@@ -1,13 +1,20 @@
-.home_side_design {
+.home_side_design .back_design {
+  width: 350px;
+  height: 100vh;
+  background-color: #4e4aff;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  z-index: -1;
 }
 
-.home_side_design img {
-  width: 500px;
-  height: 100vh;
+.home_side_design .back {
+  width: 180px;
+  height: 105vh;
+  background-color: #111111;
   position: absolute;
+  top: -50px;
+  left: 250px;
+  -webkit-transform: rotateZ(-10deg);
+          transform: rotateZ(-10deg);
   z-index: -1;
 }
 
@@ -150,17 +157,6 @@
 }
 
 @media screen and (max-width: 1450px) {
-  .home_side_design {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
-  .home_side_design img {
-    width: 500px;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-  }
   .profile_img {
     width: 520px;
     height: 89vh;
@@ -227,20 +223,16 @@
 }
 
 @media screen and (max-width: 1050px) {
-  .home_side_design {
+  .home_side_design .back_design {
+    width: 100vw;
+    height: 400px;
+    background-color: #4e4aff;
     position: absolute;
     top: 0px;
-    left: 0px;
+    z-index: -5;
   }
-  .home_side_design .desktop_image {
+  .home_side_design .back {
     display: none;
-  }
-  .home_side_design .tablet_image {
-    width: 1050px;
-    height: 610px;
-    position: absolute;
-    top: 0px;
-    z-index: -2;
   }
   .profile_img {
     width: 700px;
@@ -353,20 +345,13 @@
 }
 
 @media screen and (max-width: 750px) {
-  .home_side_design {
+  .home_side_design .back_design {
+    width: 100vw;
+    height: 300px;
+    background-color: #4e4aff;
     position: absolute;
     top: 0px;
-    left: 0px;
-  }
-  .home_side_design .desktop_image {
-    display: none;
-  }
-  .home_side_design .tablet_image {
-    width: 750px;
-    height: 440px;
-    position: absolute;
-    top: 0px;
-    z-index: -2;
+    z-index: -5;
   }
   .profile_img {
     width: 500px;
@@ -486,20 +471,13 @@
 }
 
 @media screen and (max-width: 500px) {
-  .home_side_design {
+  .home_side_design .back_design {
+    width: 100vw;
+    height: 200px;
+    background-color: #4e4aff;
     position: absolute;
     top: 0px;
-    left: 0px;
-  }
-  .home_side_design .desktop_image {
-    display: none;
-  }
-  .home_side_design .tablet_image {
-    width: 500px;
-    height: 292px;
-    position: absolute;
-    top: 0px;
-    z-index: -2;
+    z-index: -5;
   }
   .profile_img {
     width: 80%;

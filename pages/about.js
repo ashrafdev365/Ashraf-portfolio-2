@@ -68,7 +68,7 @@ const about = () => {
         <section className="info_section">
           <h2>Personal Info</h2>
           <div>
-            <ul>
+            <ul className="info1">
               <li>
                 <span>First Name:</span> Ashraf
               </li>
@@ -98,7 +98,7 @@ const about = () => {
             </ul>
           </div>
 
-          <Button name="Contact Me" />
+          <Button name="Contact" link="contact" />
         </section>
 
         <section className="experiance">
@@ -130,7 +130,7 @@ const about = () => {
             </p>
           </div>
 
-          <Button name="Recent Projects" />
+          <Button name="Recent Projects" link="projects" />
         </section>
       </main>
 

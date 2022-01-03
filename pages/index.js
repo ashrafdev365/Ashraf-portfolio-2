@@ -5,8 +5,8 @@ export default function Home() {
     <>
       <header>
         <div className="home_side_design">
-          <img src="./Rectangle1.svg" className="desktop_image" alt="aaa" />
-          <img src="./Rectangle2.svg" className="tablet_image" alt="aaa" />
+          <div className="back_design"></div>
+          <div className="back"></div>
         </div>
 
         <div className="content">
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
 
         <DesktopNavigation />
-        <Button name="About Me" link="/aboutme" />
+        <Button name="About Me" link="about" />
       </header>
     </>
   );

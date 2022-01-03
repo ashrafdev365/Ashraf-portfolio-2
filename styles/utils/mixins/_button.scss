@@ -1,4 +1,11 @@
-@mixin button($posttion: absolute, $pad: 13px 14px, $mar: 0px, $bottom: 35px, $right: 40px) {
+@mixin button(
+  $posttion: absolute,
+  $pad: 13px 14px,
+  $mar: 0px,
+  $bottom: 35px,
+  $right: 40px,
+  $font: 1.5rem
+) {
   position: $posttion;
   right: $right;
   bottom: $bottom;
@@ -13,7 +20,7 @@
     margin: 0px 20px;
   }
   i {
-    font-size: 1.5rem;
+    font-size: $font;
     padding: $pad;
 
     border-radius: 50px;

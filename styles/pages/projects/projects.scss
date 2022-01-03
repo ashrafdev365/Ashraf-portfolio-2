@@ -102,3 +102,231 @@
     font-size: 40px;
   }
 }
+
+@media screen and (max-width: 1450px) {
+  .project_section {
+    width: $width-lg;
+    margin: 70px auto;
+    @include flex($wrap: wrap);
+    div {
+      width: 300px;
+      height: 180px;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .project_cetagory {
+    @include flex();
+
+    button {
+      margin: 0px 12px;
+      padding: 6px 25px;
+      border-radius: $circle;
+      background-color: $blue;
+      color: $white;
+      font-family: "Fredoka One", cursive;
+      cursor: pointer;
+    }
+  }
+
+  .project_section {
+    width: $width-md;
+    margin: 70px auto;
+    @include flex($wrap: wrap);
+    div {
+      background-color: rgb(49, 49, 49);
+      width: 300px;
+      height: 180px;
+      border-radius: $round;
+      margin: 10px;
+      @include flex($wrap: wrap);
+      font-size: 25px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .work_heading {
+    margin: 100px 0 60px;
+    text-align: center;
+    color: $white;
+  }
+
+  .project_cetagory {
+    @include flex($wrap: wrap);
+    // border: 1px solid red;
+    button {
+      margin: 8px;
+      padding: 6px 25px;
+      border-radius: $circle;
+      background-color: $blue;
+      color: $white;
+      font-family: "Fredoka One", cursive;
+      cursor: pointer;
+    }
+  }
+
+  .project_section {
+    width: $width-sm;
+    margin: 70px auto;
+    @include flex($wrap: wrap);
+    div {
+      background-color: rgb(49, 49, 49);
+      width: 230px;
+      height: 125px;
+      border-radius: $round;
+      margin: 8px;
+      @include flex($wrap: wrap);
+      font-size: 25px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .detaile {
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(44, 44, 44);
+    color: $white;
+    @include flex($direc: column);
+    position: relative;
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    .fa-times-circle {
+      font-size: 1.6rem;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+    ul {
+      @include flex($content: space-between);
+      width: 100%;
+      // border: 1px solid red;
+      text-align: start;
+      margin-bottom: 20px;
+      li {
+        list-style: none;
+        margin: 10px 10px;
+        letter-spacing: 1px;
+        font-size: 12px;
+        span {
+          margin: 0px 5px 0px 10px;
+          font-weight: bold;
+        }
+        i {
+          font-size: 1.2rem;
+          font-weight: lighter;
+        }
+      }
+    }
+
+    div {
+      width: 95%;
+      height: 300px;
+      border-radius: 10px;
+      background-color: rgb(104, 104, 104);
+      @include flex($direc: column);
+      font-size: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .work_heading {
+    margin: 60px 0 40px;
+    text-align: center;
+    color: $white;
+  }
+
+  .project_cetagory {
+    @include flex($wrap: wrap);
+    // border: 1px solid red;
+    button {
+      margin: 8px;
+      padding: 6px 25px;
+      border-radius: $circle;
+      background-color: $blue;
+      color: $white;
+      font-family: "Fredoka One", cursive;
+      cursor: pointer;
+    }
+  }
+
+  .project_section {
+    width: 100%;
+    margin: 50px auto;
+    @include flex($wrap: wrap);
+    div {
+      background-color: rgb(49, 49, 49);
+      width: 90%;
+      height: 180px;
+      border-radius: $round;
+      margin: 8px;
+      @include flex($wrap: wrap);
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .detaile {
+    width: 95%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(44, 44, 44);
+    color: $white;
+    @include flex($direc: column);
+    position: relative;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .fa-times-circle {
+      font-size: 1.5rem;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+    ul {
+      @include flex($content: space-between, $direc: column);
+      width: 100%;
+      // border: 1px solid red;
+      text-align: center;
+      margin-bottom: 20px;
+      li {
+        list-style: none;
+        margin: 15px 10px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        span {
+          margin: 0px 5px 0px 6px;
+          font-weight: bold;
+        }
+        i {
+          font-size: 1rem;
+          font-weight: lighter;
+        }
+      }
+    }
+
+    div {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      background-color: rgb(104, 104, 104);
+      @include flex($direc: column);
+      font-size: 40px;
+    }
+  }
+}
