@@ -55,27 +55,18 @@
 .project_section div {
   background-color: #313131;
   width: 380px;
-  height: 220px;
-  border-radius: 4px;
+  height: 250px;
   margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-size: 30px;
-  color: white;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+.project_section div img {
+  width: 380px;
+  height: 250px;
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .project_portal {
@@ -178,25 +169,14 @@
 
 .detaile div {
   width: 95%;
-  height: 350px;
+}
+
+.detaile div img {
+  width: 100%;
+  height: 380px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
-  background-color: #686868;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 40px;
 }
 
 @media screen and (max-width: 1450px) {
@@ -222,6 +202,10 @@
   .project_section div {
     width: 300px;
     height: 180px;
+  }
+  .project_section div img {
+    width: 300px;
+    height: 200px;
   }
 }
 
@@ -272,29 +256,15 @@
             flex-direction: row;
   }
   .project_section div {
-    background-color: #313131;
     width: 300px;
     height: 180px;
     border-radius: 4px;
     margin: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    font-size: 25px;
-    color: white;
     cursor: pointer;
+  }
+  .project_section div img {
+    width: 300px;
+    height: 200px;
   }
 }
 
@@ -350,29 +320,13 @@
             flex-direction: row;
   }
   .project_section div {
-    background-color: #313131;
     width: 230px;
     height: 125px;
-    border-radius: 4px;
     margin: 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    font-size: 25px;
-    color: white;
-    cursor: pointer;
+  }
+  .project_section div img {
+    width: 230px;
+    height: 145px;
   }
   .detaile {
     width: 500px;
@@ -444,25 +398,13 @@
   }
   .detaile div {
     width: 95%;
+  }
+  .detaile div img {
+    width: 100%;
     height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 10px;
-    background-color: #686868;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    font-size: 40px;
   }
 }
 
@@ -518,29 +460,12 @@
             flex-direction: row;
   }
   .project_section div {
-    background-color: #313131;
     width: 90%;
     height: 180px;
-    border-radius: 4px;
-    margin: 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    font-size: 18px;
-    color: white;
-    cursor: pointer;
+  }
+  .project_section div img {
+    width: 100%;
+    height: 180px;
   }
   .detaile {
     width: 95%;
@@ -615,23 +540,13 @@
     width: 100%;
     height: 250px;
     border-radius: 10px;
-    background-color: #686868;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    font-size: 40px;
+  }
+  .detaile div img {
+    width: 100%;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
   }
 }
 /*# sourceMappingURL=projects.css.map */

@@ -1,7 +1,7 @@
 import { Button } from "../Components/Navigation/Button";
 import { DesktopNavigation } from "../Components/Navigation/DesktopNavigation";
 import { useState, useEffect } from "react";
-
+import Head from "next/head";
 const projects = () => {
   const [filter, setfilter] = useState([]);
   const [portal, setportal] = useState(false);
@@ -9,52 +9,130 @@ const projects = () => {
   const [color, setcolor] = useState("all");
   const pro = [
     {
-      tag: "react",
+      img: "ddfd.jpg",
+      name: "Marketing Agency",
+      lang: "Next.js, SCSS, Firebase",
+      claint: "Personal",
+      link: "example",
+      tag: "next",
       id: 1234,
     },
     {
-      tag: "design",
+      img: "Hdsfome-min.png",
+      name: "E-commerce",
+      lang: "Next.js, SCSS, Firebase",
+      claint: "Client",
+      link: "example",
+      tag: "next",
+      id: 15454523456,
+    },
+    {
+      img: "Desfsdfsktop product-min.png",
+      name: "E-commerce",
+      lang: "Next.js, SCSS, Firebase",
+      claint: "Client",
+      link: "example",
+      tag: "next",
       id: 123456,
     },
     {
+      img: "Desktop prsdfsoduct detaile-min.png",
+      name: "E-commerce",
+      lang: "Next.js, SCSS, Firebase",
+      claint: "Client",
+      link: "example",
+      tag: "next",
+      id: 12345543456,
+    },
+    {
+      img: "Grogup 10-min.png",
+      name: "E-commerce",
+      lang: "Figma, HTML, CSS",
+      claint: "Personal",
+      link: "example",
       tag: "design",
-      id: 123445546,
+      id: 12543344456,
     },
     {
+      img: "Group 34-min.png",
+      name: "Free Icons",
+      lang: "React.js, SCSS, APIs",
+      claint: "Personal",
+      link: "example",
       tag: "react",
-      id: 123454546,
+      id: 1234562534546,
     },
     {
+      img: "hfdsdeader-min.png",
+      name: "Portfolio",
+      lang: "React.js, CSS, Firebase",
+      claint: "Personal",
+      link: "example",
       tag: "react",
-      id: 125434456,
+      id: 12435763456,
     },
     {
-      tag: "next",
-      id: 1234534546,
+      img: "sdfsdf.png",
+      name: "Blog",
+      lang: "React.js, SCSS, Firebase",
+      claint: "Client",
+      link: "example",
+      tag: "react",
+      id: 12345387434546,
     },
     {
-      tag: "next",
-      id: 124353456,
-    },
-    {
-      tag: "next",
-      id: 123453434546,
-    },
-    {
+      img: "sdfsadf.png",
+      name: "Portfolio",
+      lang: "Javascript, CSS, HTML, Firebase",
+      claint: "Personal",
+      link: "example",
       tag: "Javascript",
       id: 1234534546,
     },
     {
-      tag: "Javascript",
+      img: "sfd.png",
+      name: "Blog",
+      lang: "Next.js, SCSS, Firebase",
+      claint: "Personal",
+      link: "example",
+      tag: "next",
       id: 123487456,
     },
     {
-      tag: "Javascript",
-      id: 123456746,
+      img: "sdfs.png",
+      name: "SASS Product",
+      lang: "Next.js, SCSS, Firebase, APIs",
+      claint: "Personal",
+      link: "example",
+      tag: "next",
+      id: 12323456746,
     },
     {
+      img: "hedfg.png",
+      name: "Banking Agency",
+      lang: "Javascript, CSS, HTML",
+      claint: "Personal",
+      link: "example",
       tag: "Javascript",
-      id: 12345675646,
+      id: 12345096746,
+    },
+    {
+      img: "zv.png",
+      name: "Weather",
+      lang: "Javascript, CSS, HTML",
+      claint: "Personal",
+      link: "example",
+      tag: "Javascript",
+      id: 12343456746,
+    },
+    {
+      img: "tre.png",
+      name: "Home Rant",
+      lang: "Figma, CSS, HTML",
+      claint: "Personal",
+      link: "example",
+      tag: "design",
+      id: 12387456746,
     },
   ];
 
@@ -75,6 +153,9 @@ const projects = () => {
 
   return (
     <>
+    <Head>
+      <title>Recent Projects</title>
+    </Head>
       <h1 className="work_heading">
         <span>My </span> Recent Work
       </h1>
@@ -90,8 +171,12 @@ const projects = () => {
       <section className="project_section">
         {filter.map((value) => {
           return (
-            <div className="projects" onClick={() => handleItme(value.id)}>
-              {value.tag}
+            <div
+              className="projects"
+              onClick={() => handleItme(value.id)}
+              key={value.id}
+            >
+              <img src={value.img} alt="ashraf" />
             </div>
           );
         })}
@@ -105,8 +190,8 @@ const projects = () => {
             })
             .map((value) => {
               return (
-                <div className="detaile">
-                  <h2>Personal Project</h2>
+                <div className="detaile" key={value.id}>
+                  <h2>Personal Projects</h2>
                   <i
                     class="far fa-times-circle"
                     onClick={() => setportal(false)}
@@ -116,29 +201,31 @@ const projects = () => {
                       <li>
                         <i className="fas fa-user"></i>
                         <span>Name:</span>
-                        Project
+                        {value?.name}
                       </li>
                       <li>
                         <i className="fas fa-code"></i>
                         <span>Language:</span>
-                        React.js, Firebase
+                        {value.lang}
                       </li>
                     </span>
                     <span>
                       <li>
                         <i className="fas fa-clipboard-user"></i>
                         <span>Claint:</span>
-                        Personal
+                        {value.claint}
                       </li>
                       <li>
                         <i className="fas fa-external-link-square-alt"></i>
                         <span>Link:</span>
-                        example.com
+                        {value.link}
                       </li>
                     </span>
                   </ul>
 
-                  <div>{value.id}</div>
+                  <div>
+                    <img src={value.img} alt="ashraf" />
+                  </div>
                 </div>
               );
             })}

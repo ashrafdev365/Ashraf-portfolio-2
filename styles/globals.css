@@ -32,6 +32,26 @@ h1 span {
   color: #4e4aff;
 }
 
+/* width */
+::-webkit-scrollbar {
+  background-color: #25273c;
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgba(22, 23, 34, 0.322);
+  -webkit-box-shadow: 0 0 3px #161722;
+          box-shadow: 0 0 3px #161722;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #161722;
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 1050px) {
   p,
   button {

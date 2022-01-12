@@ -32,12 +32,18 @@
   div {
     background-color: rgb(49, 49, 49);
     width: 380px;
-    height: 220px;
-    border-radius: $round;
+    height: 250px;
     margin: 20px;
-    @include flex($wrap: wrap);
-    font-size: 30px;
-    color: white;
+    border-radius: $round;
+    img {
+      width: 380px;
+      height: 250px;
+      border-radius: $round;
+      object-fit: cover;
+    }
+    // @include flex($wrap: wrap);
+    // font-size: 30px;
+    // color: white;
     cursor: pointer;
   }
 }
@@ -95,11 +101,12 @@
 
   div {
     width: 95%;
-    height: 350px;
-    border-radius: 10px;
-    background-color: rgb(104, 104, 104);
-    @include flex($direc: column);
-    font-size: 40px;
+    img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
   }
 }
 
@@ -111,6 +118,10 @@
     div {
       width: 300px;
       height: 180px;
+      img {
+        width: 300px;
+        height: 200px;
+      }
     }
   }
 }
@@ -135,14 +146,14 @@
     margin: 70px auto;
     @include flex($wrap: wrap);
     div {
-      background-color: rgb(49, 49, 49);
       width: 300px;
       height: 180px;
       border-radius: $round;
       margin: 10px;
-      @include flex($wrap: wrap);
-      font-size: 25px;
-      color: white;
+      img {
+        width: 300px;
+        height: 200px;
+      }
       cursor: pointer;
     }
   }
@@ -174,15 +185,13 @@
     margin: 70px auto;
     @include flex($wrap: wrap);
     div {
-      background-color: rgb(49, 49, 49);
       width: 230px;
       height: 125px;
-      border-radius: $round;
+      img {
+        width: 230px;
+        height: 145px;
+      }
       margin: 8px;
-      @include flex($wrap: wrap);
-      font-size: 25px;
-      color: white;
-      cursor: pointer;
     }
   }
 
@@ -230,11 +239,12 @@
 
     div {
       width: 95%;
-      height: 300px;
-      border-radius: 10px;
-      background-color: rgb(104, 104, 104);
-      @include flex($direc: column);
-      font-size: 40px;
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
     }
   }
 }
@@ -265,15 +275,12 @@
     margin: 50px auto;
     @include flex($wrap: wrap);
     div {
-      background-color: rgb(49, 49, 49);
       width: 90%;
       height: 180px;
-      border-radius: $round;
-      margin: 8px;
-      @include flex($wrap: wrap);
-      font-size: 18px;
-      color: white;
-      cursor: pointer;
+      img {
+        width: 100%;
+        height: 180px;
+      }
     }
   }
 
@@ -324,9 +331,12 @@
       width: 100%;
       height: 250px;
       border-radius: 10px;
-      background-color: rgb(104, 104, 104);
-      @include flex($direc: column);
-      font-size: 40px;
+      img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
     }
   }
 }

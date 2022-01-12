@@ -1,6 +1,6 @@
 import { Button } from "../Components/Navigation/Button";
 import { DesktopNavigation } from "../Components/Navigation/DesktopNavigation";
-
+import Head from "next/head";
 const about = () => {
   const lanuage = [
     {
@@ -57,6 +57,9 @@ const about = () => {
 
   return (
     <>
+    <Head>
+      <title>About Me</title>
+    </Head>
       <div className="aboutHeading">
         <h1>
           About <span>Me</span>
@@ -79,7 +82,7 @@ const about = () => {
                 <span>Tag:</span> Front end Dev
               </li>
               <li>
-                <span>Freelancer:</span> Avalible
+                <span>Freelancer:</span> Available
               </li>
             </ul>
             <ul>
@@ -93,7 +96,7 @@ const about = () => {
                 <span>Language:</span> Bangla, English
               </li>
               <li>
-                <span>Project Based:</span> Avalible
+                <span>Project Based:</span> Available
               </li>
             </ul>
           </div>
@@ -113,7 +116,7 @@ const about = () => {
           </div>
           <div className="box">
             <h3>
-              12<span>+</span>
+              14<span>+</span>
             </h3>
             <div></div>
             <p>
@@ -122,7 +125,7 @@ const about = () => {
           </div>
           <div className="box">
             <h3>
-              17<span>+</span>
+              15<span>+</span>
             </h3>
             <div></div>
             <p>
